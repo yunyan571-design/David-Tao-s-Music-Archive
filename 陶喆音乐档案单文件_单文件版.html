@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#12499b">
+  <meta name="description" content="David Tao interactive music archive: selected works, albums, live performances and memories.">
+  <title>陶喆 · Soul Archive</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+:root{--ink:#11100f;--cream:#f5efe3;--paper:#eae2d5;--orange:#f37742;--muted:#a49b8f;--line:rgba(245,239,227,.18)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--ink);color:var(--cream);font-family:"DM Sans","Noto Sans SC",sans-serif;-webkit-font-smoothing:antialiased}button,a{font:inherit}button{cursor:pointer}a{color:inherit;text-decoration:none}button:focus-visible,a:focus-visible{outline:2px solid var(--orange);outline-offset:4px}img{display:block;max-width:100%}::selection{background:var(--orange);color:var(--ink)}.noise{position:fixed;inset:0;pointer-events:none;z-index:20;opacity:.075;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.7' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.65'/%3E%3C/svg%3E")}
+.site-header{height:86px;padding:0 5.5%;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);position:relative;z-index:5}.brand{display:flex;gap:12px;align-items:center}.brand-mark{font-size:31px;font-weight:800;letter-spacing:-.13em;line-height:1}.brand-dot,.footer-brand span{color:var(--orange)}.brand-text{font-size:10px;font-weight:700;letter-spacing:.17em;line-height:1.55}.brand-text small{font-size:10px;letter-spacing:.12em;color:var(--muted)}.nav{display:flex;gap:38px;margin-left:6%}.nav a{font-size:12px;font-weight:600;color:#c9c0b4;transition:color .2s}.nav a:hover,.footer a:hover{color:var(--orange)}.nav-cta{font-size:12px;font-weight:700;border:1px solid var(--line);border-radius:100px;padding:13px 20px}.nav-cta span{margin-left:15px;color:var(--orange)}
+.hero{min-height:690px;display:grid;grid-template-columns:53% 47%;position:relative}.hero-copy{padding:105px 5vw 60px 10.4vw;position:relative;z-index:2}.eyebrow,.section-kicker{font-size:11px;letter-spacing:.24em;font-weight:700;color:var(--orange);display:flex;align-items:center;gap:13px}.eyebrow-line{display:inline-block;width:28px;height:1px;background:var(--orange)}h1,h2,p{margin-top:0}.hero h1{font-size:clamp(52px,5.3vw,93px);font-weight:900;letter-spacing:-.085em;line-height:1.14;margin:43px 0 25px}.hero h1 span{color:var(--orange)}.hero h1 em,.section-heading h2 em,.quote-band em{font-style:normal;font-weight:400}.hero h1 strong{font-weight:900;white-space:nowrap}.hero-description{font-size:15px;line-height:1.95;color:#bdb3a6;max-width:490px}.hero-description i,.live-heading i{font-style:normal;color:var(--cream)}.hero-actions{display:flex;align-items:center;gap:32px;margin-top:32px}.button{font-size:12px;font-weight:700}.primary{background:var(--orange);color:#15120f;padding:16px 24px;border-radius:3px;transition:transform .2s,background .2s}.primary:hover{transform:translateY(-3px);background:#ff9467}.primary span{margin-left:16px}.text-link{padding:12px 0;border-bottom:1px solid var(--cream)}.text-link span{margin-left:8px;color:var(--orange)}.hero-meta{display:flex;gap:15px;align-items:center;color:#857c72;font-size:10px;font-weight:700;letter-spacing:.18em;margin-top:83px}.meta-rule{height:1px;width:50px;background:#5f554d}.hero-art{position:relative;overflow:hidden;min-height:650px;background:#7e321d}.hero-photo{position:absolute;inset:0}.hero-photo img{width:100%;height:100%;object-fit:cover;filter:grayscale(.25) contrast(1.2);opacity:.47}.hero-art-shade{position:absolute;inset:0;background:linear-gradient(128deg,rgba(242,109,53,.34),transparent 36%),linear-gradient(0deg,rgba(12,10,10,.94),transparent 62%),linear-gradient(90deg,rgba(20,13,11,.6),transparent 65%)}.orbit{position:absolute;border:1px solid rgba(255,207,162,.35);border-radius:50%;width:540px;height:540px;left:50%;top:47%;transform:translate(-50%,-50%);box-shadow:0 0 0 35px rgba(255,207,162,.06),0 0 0 72px rgba(255,207,162,.035)}.orbit-two{width:350px;height:350px;box-shadow:none;border-color:rgba(255,207,162,.22)}.art-label{position:absolute;left:10%;bottom:12%;display:flex;flex-direction:column;align-items:flex-start;gap:22px}.art-label>span{font-size:10px;font-weight:700;letter-spacing:.25em;color:#ffba99}.art-label strong{font-size:clamp(65px,7.4vw,135px);letter-spacing:-.1em;line-height:.8;font-weight:900}.art-label i{font-style:normal;color:var(--orange)}.hero-sticker{position:absolute;right:8%;top:9%;width:100px;height:100px;background:var(--cream);color:var(--ink);border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;font-size:11px;font-weight:800;line-height:1.1;transform:rotate(12deg)}.hero-sticker span{font-size:20px;color:var(--orange)}.scroll-cue{position:absolute;bottom:34px;left:5.5%;color:#8d8378;font-size:10px;letter-spacing:.2em;z-index:3}.scroll-cue span{font-size:20px;margin-left:10px;color:var(--orange)}
+.ticker{overflow:hidden;background:var(--orange);color:var(--ink);height:56px;display:flex;align-items:center}.ticker-track{white-space:nowrap;font-weight:900;font-size:17px;letter-spacing:.04em;animation:marquee 32s linear infinite}.ticker-track span{padding:0 25px;font-size:19px}@keyframes marquee{to{transform:translateX(-50%)}}
+.section{padding:115px 10.4vw}.section-heading{display:flex;justify-content:space-between;align-items:end;gap:60px;margin-bottom:46px}.section-heading h2{font-size:clamp(42px,4.4vw,72px);line-height:1.25;letter-spacing:-.075em;margin:22px 0 0;font-weight:900}.section-heading h2 em{color:var(--orange)}.section-heading>p{color:#aaa093;font-size:14px;line-height:1.9;max-width:335px;margin-bottom:4px}.music-toolbar{display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:15px 0;margin-bottom:27px;gap:15px}.filter-group{display:flex;gap:6px}.filter,.surprise{background:none;border:0;color:#a69e92;font-size:12px;font-weight:700;padding:11px 17px;border-radius:30px}.filter.active{background:var(--cream);color:var(--ink)}.filter sup{font-size:9px;margin-left:2px}.surprise{color:var(--cream);border:1px solid #65594c;padding:10px 17px;transition:background .2s}.surprise:hover{background:#2c261e}.surprise span{color:var(--orange);font-size:16px;margin-right:8px}
+.songs-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.song-card{min-height:290px;border:1px solid var(--line);padding:24px;position:relative;overflow:hidden;display:flex;flex-direction:column;align-items:flex-start;background:#1a1714;text-align:left;color:var(--cream);transition:transform .25s,border-color .25s,background .25s}.song-card:hover,.song-card.selected{transform:translateY(-4px);border-color:var(--orange);background:#241b16}.song-card::before{content:"";position:absolute;width:235px;height:235px;border:1px solid rgba(255,255,255,.12);border-radius:50%;right:-65px;top:-72px;box-shadow:0 0 0 25px rgba(255,255,255,.025),0 0 0 52px rgba(255,255,255,.018)}.song-card:nth-child(3n+2){background:#272119}.song-card:nth-child(3n+3){background:#201f1d}.song-top{display:flex;justify-content:space-between;width:100%;position:relative;z-index:1}.song-index,.song-year{font-size:11px;letter-spacing:.14em;font-weight:700;color:#c1b4a2}.song-glyph{font-size:68px;color:var(--orange);line-height:1;position:relative;margin-top:auto;margin-bottom:25px;font-weight:400;letter-spacing:-.1em}.song-bottom{display:flex;justify-content:space-between;align-items:end;width:100%;position:relative;z-index:1}.song-bottom strong{font-size:24px;letter-spacing:-.045em}.song-bottom small{display:block;font-size:11px;color:#a59a8b;margin-top:9px}.song-arrow{width:34px;height:34px;border:1px solid #72695f;border-radius:50%;display:grid;place-items:center;font-size:17px;flex:none}.song-card:hover .song-arrow,.song-card.selected .song-arrow{background:var(--orange);color:var(--ink);border-color:var(--orange)}.song-detail{display:grid;grid-template-columns:1fr auto;align-items:center;gap:30px;background:var(--paper);color:var(--ink);padding:30px 35px;margin-top:18px;border-left:4px solid var(--orange)}.song-detail[hidden]{display:none}.detail-kicker{font-size:10px;font-weight:800;letter-spacing:.2em;color:#a55733}.song-detail h3{font-size:25px;margin:8px 0}.song-detail p{font-size:13px;color:#554e46;line-height:1.7;margin:0}.detail-link{background:var(--ink);color:var(--cream);font-size:12px;font-weight:700;padding:14px 18px;white-space:nowrap}.detail-link:hover{background:#4e2c20}
+.quote-band{min-height:235px;background:#b94b2f;display:flex;align-items:center;justify-content:space-between;padding:30px 10.4vw;gap:25px}.quote-star{font-size:45px}.quote-band p{font-size:clamp(23px,3vw,46px);font-weight:900;letter-spacing:-.06em;margin:0}.quote-band em{color:#f8c4a2}.quote-index{font-size:10px;letter-spacing:.2em;white-space:nowrap;align-self:flex-end}
+.live-section{background:var(--paper);color:var(--ink)}.live-section .section-kicker{color:#c4572e}.live-heading h2 em{color:#c4572e}.live-heading>p{color:#5f564c}.live-heading i{color:#29241e}.live-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.live-card{background:#171615;cursor:pointer;border:0;padding:0;text-align:left;color:var(--cream);display:flex;flex-direction:column;min-width:0;transition:transform .25s,box-shadow .25s}.live-card:hover{transform:translateY(-5px);box-shadow:0 15px 30px rgba(26,18,13,.22)}.live-thumb{position:relative;aspect-ratio:1.33;overflow:hidden;background:linear-gradient(135deg,#3d1a12,#d86835)}.live-thumb img{width:100%;height:100%;object-fit:cover;filter:contrast(1.09);transition:transform .4s}.live-card:hover img{transform:scale(1.05)}.live-thumb::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.52),transparent 70%)}.live-number{position:absolute;left:20px;top:18px;z-index:1;font-size:11px;font-weight:700;letter-spacing:.18em}.play-icon{position:absolute;z-index:1;left:50%;top:50%;transform:translate(-50%,-50%);height:59px;width:59px;background:var(--orange);border-radius:50%;display:grid;place-items:center;color:var(--ink);font-size:22px;padding-left:3px}.live-info{padding:22px 23px 25px;flex:1}.live-info .city{font-size:24px;font-weight:800;letter-spacing:-.05em}.live-info .city span{color:var(--orange);font-size:14px;margin-left:6px}.live-info p{font-size:12px;color:#aaa095;line-height:1.65;margin:10px 0 0}.live-date{display:block;border-top:1px solid var(--line);padding-top:16px;margin-top:25px;font-size:10px;letter-spacing:.13em;color:#999085}.media-note{font-size:11px;color:#6c6257;margin:22px 0 0}.media-note a{text-decoration:underline;text-underline-offset:3px}.media-note a:hover{color:#c4572e}
+.about-section{min-height:490px;padding:90px 10.4vw;display:grid;grid-template-columns:1fr 1.45fr 1fr;gap:50px;align-items:center;overflow:hidden;position:relative}.about-number{font-size:11px;font-weight:700;letter-spacing:.2em;color:var(--orange);align-self:start}.about-body{z-index:1}.about-body h2{font-size:clamp(55px,6vw,100px);letter-spacing:-.1em;line-height:1.15;margin-bottom:24px}.about-body h2 span{color:var(--orange)}.about-body p{color:#b9afa4;font-size:14px;line-height:1.9}.about-body a{display:inline-block;margin-top:15px;font-size:12px;font-weight:700;border-bottom:1px solid var(--orange);padding-bottom:7px}.about-body a span{color:var(--orange);margin-left:14px}.about-disc{width:390px;height:390px;border-radius:50%;background:repeating-radial-gradient(circle at center,#221b19 0 3px,#5b3227 4px 5px,#191516 6px 9px);box-shadow:0 0 0 10px #34221f,25px 30px 55px rgba(0,0,0,.4);position:relative;right:-45px}.about-disc div{position:absolute;inset:35%;background:var(--orange);border-radius:50%;display:grid;place-items:center}.about-disc div::after{content:"";height:13px;width:13px;border-radius:50%;background:var(--ink)}
+.footer{border-top:1px solid var(--line);padding:35px 5.5%;display:flex;align-items:center;justify-content:space-between;gap:25px}.footer-brand{font-size:22px;font-weight:900;white-space:nowrap}.footer-brand small{display:block;font-size:9px;letter-spacing:.2em;color:var(--muted)}.footer p{font-size:11px;line-height:1.65;color:#81786f;max-width:500px;margin:0}.footer>a{font-size:11px;font-weight:700;white-space:nowrap}.video-dialog{padding:0;background:#151311;color:var(--cream);border:1px solid #786359;width:min(860px,calc(100% - 32px));max-height:calc(100% - 32px)}.video-dialog::backdrop{background:rgba(0,0,0,.82);backdrop-filter:blur(5px)}.dialog-top{display:flex;justify-content:space-between;align-items:center;padding:16px 21px;font-size:11px;font-weight:700;letter-spacing:.16em}.dialog-top button{border:0;background:none;color:var(--cream);font-size:30px;line-height:1}.video-frame{aspect-ratio:16/9;background:#080808}.video-frame iframe{width:100%;height:100%;border:0}.video-dialog p{padding:15px 21px;color:#b9afa4;font-size:12px;margin:0}
+@media(max-width:1050px){.hero-copy{padding-left:6vw}.section{padding-left:6vw;padding-right:6vw}.quote-band,.about-section{padding-left:6vw;padding-right:6vw}.hero h1{font-size:6vw}.about-disc{width:300px;height:300px}.about-section{gap:20px}}
+@media(max-width:760px){.site-header{height:70px}.nav{display:none}.nav-cta{padding:9px 12px;font-size:11px}.brand-mark{font-size:27px}.hero{display:flex;flex-direction:column}.hero-copy{padding:67px 6vw 58px}.hero h1{font-size:clamp(45px,10vw,70px);margin:30px 0 20px}.hero-description{font-size:13px}.hero-meta{margin-top:50px}.hero-art{min-height:430px}.art-label strong{font-size:75px}.scroll-cue{display:none}.section{padding:75px 6vw}.section-heading{display:block;margin-bottom:30px}.section-heading h2{font-size:48px}.section-heading>p{margin:22px 0 0}.songs-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.song-card{min-height:240px}.quote-band{min-height:200px}.quote-band p{font-size:28px}.quote-index{display:none}.live-grid{grid-template-columns:1fr 1fr}.about-section{grid-template-columns:1fr 1fr;padding-top:70px;padding-bottom:70px}.about-number{grid-column:1/-1}.about-disc{width:260px;height:260px;right:-55px}.footer{flex-wrap:wrap}}
+@media(max-width:520px){.hero h1{font-size:44px}.hero h1 strong{white-space:normal}.hero-actions{gap:18px;flex-wrap:wrap}.hero-art{min-height:370px}.hero-sticker{width:75px;height:75px;font-size:9px}.art-label strong{font-size:62px}.art-label{bottom:10%}.music-toolbar{align-items:flex-start;flex-direction:column}.filter{padding:9px 12px}.songs-grid,.live-grid{grid-template-columns:1fr}.song-card{min-height:230px}.song-detail{grid-template-columns:1fr;padding:24px}.detail-link{width:max-content}.quote-band{padding:45px 6vw}.quote-star{font-size:27px}.quote-band p{font-size:25px}.about-section{display:block}.about-number{margin-bottom:45px}.about-body h2{font-size:65px}.about-disc{position:absolute;width:200px;height:200px;right:-100px;bottom:-80px;opacity:.6}.footer{display:block}.footer p{margin:19px 0}.footer>a{display:inline-block;margin-top:4px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.ticker-track{animation:none}*,*::before,*::after{transition-duration:.01ms!important;animation-duration:.01ms!important}}
+
+/* Blue, yellow and black chapters inspired by the records, with original artwork. */
+:root{--ink:#10151e;--cream:#f4f1e5;--paper:#eeede3;--orange:#ee6938;--yellow:#f6d547;--blue:#174b9d;--muted:#acb5c4;--line:rgba(255,255,255,.2)}
+body{background:#0d111a}
+.site-header{background:#113b80;border-bottom-color:rgba(255,255,255,.22)}
+.brand-dot,.footer-brand span{color:var(--yellow)}
+.nav a{color:#d4dcf0}.nav a:hover{color:var(--yellow)}
+.nav-cta{border-color:rgba(255,255,255,.38)}.nav-cta span{color:var(--yellow)}
+.hero{background:#174b9d}
+.hero-copy{background:radial-gradient(circle at 75% 15%,rgba(255,255,255,.1),transparent 30%),linear-gradient(145deg,#1a57ad,#124187 65%,#0d3272);overflow:hidden}
+.hero-copy::before{content:"";position:absolute;width:600px;height:600px;border-radius:50%;border:1px solid rgba(255,255,255,.18);left:-280px;bottom:-410px;box-shadow:0 0 0 34px rgba(255,255,255,.035),0 0 0 74px rgba(255,255,255,.025),0 0 0 130px rgba(255,255,255,.02);pointer-events:none}
+.hero-copy>*{position:relative;z-index:1}
+.eyebrow,.section-kicker{color:var(--yellow)}.eyebrow-line{background:var(--yellow)}
+.hero h1 span{color:var(--yellow)}.hero-description{color:#d4e0f4}.hero-description i{color:#fff}
+.primary{background:var(--yellow);color:#0c1b3c}.primary:hover{background:#ffe471}.text-link span,.scroll-cue span{color:var(--yellow)}
+.hero-meta{color:#a4bee5}.meta-rule{background:#9bb8e0}
+.hero-art{background:#07162f}.hero-photo img{filter:grayscale(.55) contrast(1.22);opacity:.52}
+.hero-art-shade{background:linear-gradient(145deg,rgba(29,84,184,.35),transparent 42%),linear-gradient(0deg,rgba(3,11,28,.97),transparent 65%),linear-gradient(90deg,rgba(5,21,48,.53),transparent 60%)}
+.orbit{border-color:rgba(252,225,116,.4);box-shadow:0 0 0 35px rgba(255,255,255,.035),0 0 0 72px rgba(255,255,255,.025)}.orbit-two{border-color:rgba(255,255,255,.16)}
+.art-label>span{color:#e8d481}.art-label strong{font-size:clamp(65px,7vw,128px)}.art-label i{font-size:.42em;color:var(--yellow);letter-spacing:-.08em;vertical-align:middle}
+.hero-sticker{background:var(--yellow)}.hero-sticker span{color:#0e408d}
+.ticker{background:var(--yellow)}.ticker-track span{color:#1b4a93}
+
+.album-section{background:#e9e7df;color:#121820;padding:95px 10.4vw 105px}
+.album-intro{display:grid;grid-template-columns:1.2fr 1.8fr 1fr;align-items:end;gap:35px;margin-bottom:35px}
+.album-intro .section-kicker{color:#144c9f;white-space:nowrap;align-self:start}
+.album-intro h2{font-size:clamp(36px,4.2vw,68px);letter-spacing:-.075em;line-height:1.13;margin:0;font-weight:900}
+.album-intro h2 em{font-style:normal;color:#1654ae;white-space:nowrap}
+.album-intro>p:last-child{font-size:12px;line-height:1.85;color:#5d6570;margin:0}
+.album-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:13px}
+.album-tile{border:2px solid transparent;text-align:left;min-width:0;min-height:400px;padding:18px;display:flex;flex-direction:column;align-items:stretch;position:relative;transition:transform .25s,box-shadow .25s,border-color .25s}
+.album-tile:hover,.album-tile.active{transform:translateY(-6px);box-shadow:0 17px 26px rgba(16,25,42,.16);border-color:#f17744}
+.album-year{font-size:10px;font-weight:800;letter-spacing:.16em;opacity:.75}
+.album-art{height:215px;margin:18px 0 24px;position:relative;display:grid;place-items:center;overflow:hidden}
+.album-art b{position:relative;z-index:2;font-weight:900;letter-spacing:-.13em}
+.album-art i{position:absolute;display:block;inset:0}
+.album-david{background:#174b9d;color:white}.album-art-david{background:#2566bd}.album-art-david i{background:repeating-radial-gradient(circle at 70% 65%,transparent 0 13px,rgba(255,255,255,.2) 14px 15px,transparent 16px 34px);transform:rotate(-15deg) scale(1.25)}.album-art-david b{font-size:105px;font-style:italic;color:#f6f3e6;transform:rotate(-11deg)}
+.album-imok{background:#f2cf37;color:#161915}.album-art-imok{background:radial-gradient(circle,#0d1720 1px,transparent 2px) 0 0/8px 8px,#f6d740}.album-art-imok i{width:195px;height:245px;border-radius:49% 51% 48% 52%;background:#161915;left:-70px;top:28px;transform:rotate(-18deg)}.album-art-imok b{font-size:68px;font-style:italic;color:#e0412c;transform:rotate(-15deg);text-shadow:2px 2px 0 #f8e680}
+.album-black{background:#111211;color:white}.album-art-black{background:linear-gradient(145deg,#181a1d,#060607)}.album-art-black i{border-radius:50%;width:280px;height:160px;left:50%;top:50%;transform:translate(-50%,-50%) rotate(-10deg);border:20px solid #d7d5cd;box-shadow:0 0 0 14px #17191c inset,0 0 0 36px #f4f1e9 inset}.album-art-black b{font-size:77px;color:#f36d32;text-shadow:0 0 26px #c34717}
+.album-road{background:#667b8c;color:white}.album-art-road{background:#647d91}.album-art-road i{background:repeating-radial-gradient(ellipse at 38% 30%,transparent 0 7px,rgba(255,255,255,.55) 8px 9px,transparent 10px 23px);transform:scale(1.3) rotate(-10deg)}.album-art-road b{font-size:37px;line-height:1.02;letter-spacing:-.08em;color:#eaf1ee;text-align:center}
+.album-tile>strong{font-size:22px;letter-spacing:-.04em}.album-tile>small{font-size:10px;margin-top:7px;opacity:.75}.album-action{font-size:10px;font-weight:800;letter-spacing:.08em;margin-top:auto;padding-top:23px}
+
+.music-section{background:#f4f2e9;color:#111925;scroll-margin-top:24px}.music-section .section-kicker{color:#2055a1}.music-section .section-heading h2 em{color:#1a53a0}.music-section .section-heading>p{color:#596171}
+.music-toolbar{border-color:#c9cbd0}.filter{color:#626b78}.filter.active{background:#174b9d;color:white}.surprise{border-color:#b2b4ba;color:#142849}.surprise:hover{background:#e4e6e8}.surprise span{color:#ea6435}
+.song-card{min-height:314px;border:0;border-radius:0;padding:23px 23px 18px;color:white}
+.song-card:hover{transform:translateY(-5px);border-color:transparent;box-shadow:0 13px 26px rgba(25,37,53,.2)}
+.song-card::before{pointer-events:none}
+.song-card.cover-david{background:#194d99}.song-card.cover-david::before{background:repeating-radial-gradient(circle at 70% 50%,transparent 0 14px,rgba(255,255,255,.1) 15px 16px,transparent 17px 31px);border:0;box-shadow:none;width:300px;height:300px;right:-75px;top:-85px}
+.song-card.cover-imok{background:#f1d240;color:#151719}.song-card.cover-imok::before{background:radial-gradient(circle,#1f2424 1px,transparent 2px) 0 0/8px 8px;border:0;box-shadow:none;opacity:.18;width:235px;height:235px}
+.song-card.cover-black{background:#17191b}.song-card.cover-black::before{background:radial-gradient(circle at center,#ed6c38 0 12%,#050606 13% 28%,#dadad6 29% 44%,transparent 45%);border:0;box-shadow:none;width:245px;height:245px;right:-30px;top:-58px;opacity:.8}
+.song-card.cover-road{background:#687f90}.song-card.cover-road::before{background:repeating-radial-gradient(ellipse at center,transparent 0 7px,rgba(255,255,255,.18) 8px 9px,transparent 10px 25px);border:0;box-shadow:none;width:300px;height:270px;right:-30px;top:-45px}
+.song-card.cover-taiping{background:#a55b3a}.song-card.cover-taiping::before{background:repeating-linear-gradient(-27deg,transparent 0 13px,rgba(255,238,209,.08) 14px 15px,transparent 16px 28px);border:0;box-shadow:none;width:300px;height:300px;right:-10px;top:-40px}
+.song-card.cover-imok .song-index,.song-card.cover-imok .song-year,.song-card.cover-imok .song-bottom small{color:#43423a}
+.song-index,.song-year{color:rgba(255,255,255,.74)}.song-year{font-size:9px;text-align:right;max-width:125px}.song-glyph{color:var(--yellow);font-weight:800;letter-spacing:-.1em;font-size:62px;margin-bottom:15px}.cover-imok .song-glyph{color:#d54730}.cover-black .song-glyph{color:#ed7139}.cover-road .song-glyph{color:#eaf3f0}.cover-taiping .song-glyph{color:#fff1bc}
+.song-bottom strong{font-size:21px}.song-bottom small{color:rgba(255,255,255,.72)}.song-arrow{background:transparent;color:inherit;cursor:pointer}.cover-imok .song-arrow{border-color:#534f3c}.song-arrow:hover{background:var(--yellow);color:#111;border-color:var(--yellow)}
+.song-listen{width:100%;border-top:1px solid rgba(255,255,255,.33);padding-top:14px;margin-top:19px;font-size:11px;font-weight:800;letter-spacing:.04em;position:relative;z-index:1;display:flex;justify-content:space-between}.song-listen:hover{text-decoration:underline;text-underline-offset:4px}.cover-imok .song-listen{border-color:rgba(0,0,0,.3)}
+.song-detail{background:#dfe8f3;border-left-color:#1b56a2}.detail-kicker{color:#1b56a2}.detail-link{background:#164b9b}.detail-link:hover{background:#0a3270}
+.quote-band{background:#111820;color:#f4f1e5;position:relative;overflow:hidden}.quote-band::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(135deg,transparent 0 38px,rgba(255,255,255,.035) 39px 40px,transparent 41px 80px);pointer-events:none}.quote-band>*{position:relative}.quote-star,.quote-band em{color:var(--yellow)}
+.live-section{background:#111923;color:#f4f1e5}.live-section .section-kicker,.live-heading h2 em{color:var(--yellow)}.live-heading>p{color:#b0bed0}.live-heading i{color:#fff}.live-card{background:#1a273c}.live-card:nth-child(2){background:#1d3d73}.live-card:nth-child(3){background:#202125}.live-thumb{background:linear-gradient(135deg,#173d74,#111923)}.play-icon{background:var(--yellow)}.live-info .city span{color:var(--yellow)}.media-note{color:#a9b5c8}.media-note a:hover{color:var(--yellow)}
+.about-section{background:#f0d343;color:#141b21}.about-number{color:#1d4b91}.about-body h2 span{color:#1752a5}.about-body p{color:#39424d}.about-body a{border-bottom-color:#1652a5}.about-body a span{color:#1652a5}.about-disc{background:repeating-radial-gradient(circle at center,#0e1b30 0 3px,#315391 4px 5px,#0e1b30 6px 9px);box-shadow:0 0 0 10px #1a3973,25px 30px 55px rgba(28,37,48,.28)}.about-disc div{background:#f2ede0}
+.footer{background:#0c1523}.footer p{color:#9ba6b8}
+@media(max-width:1050px){.album-section{padding-left:6vw;padding-right:6vw}.album-intro{grid-template-columns:1fr 1.6fr}.album-intro>p:last-child{grid-column:2}.album-art{height:180px}.album-tile{min-height:365px}.album-art-david b{font-size:85px}}
+@media(max-width:760px){.album-section{padding:70px 6vw}.album-intro{display:block}.album-intro h2{font-size:48px;margin:20px 0}.album-intro>p:last-child{max-width:430px}.album-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.hero-copy{padding-bottom:70px}.hero h1{font-size:clamp(45px,8.3vw,65px)}.art-label strong{font-size:70px}}
+@media(max-width:520px){.album-grid{gap:9px}.album-tile{padding:12px;min-height:282px}.album-art{height:135px;margin:10px 0 16px}.album-art-david b{font-size:63px}.album-art-imok b{font-size:47px}.album-art-black b{font-size:54px}.album-art-road b{font-size:25px}.album-tile>strong{font-size:18px}.album-tile>small{font-size:9px}.album-action{font-size:9px;padding-top:13px}.music-toolbar{gap:12px}.filter-group{flex-wrap:wrap}.filter{padding:9px 11px}.song-card{min-height:280px}.hero h1{font-size:44px}.art-label strong{font-size:62px}.quote-band p{font-size:25px}}
+
+/* Discography and memory archive */
+.catalog-section{background:#e7e7e2;color:#111b2b}.catalog-section .section-kicker{color:#2054a0}.catalog-section h2 em{color:#1a53a0}.catalog-section .section-heading>p{color:#5b6570}.catalog-meta{display:flex;justify-content:space-between;gap:20px;border-top:1px solid #aeb7c1;padding:15px 0 22px;font-size:11px;font-weight:800;letter-spacing:.1em;color:#455b72}.catalog-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px;align-items:start}.catalog-album{background:#fbfaf5;border:1px solid #ccd3d6;min-width:0}.catalog-album[open]{box-shadow:0 14px 32px rgba(16,34,54,.1)}.catalog-album summary{list-style:none;display:flex;align-items:center;gap:17px;padding:20px;cursor:pointer;border-top:6px solid #1c53a0}.catalog-album summary::-webkit-details-marker{display:none}.catalog-album.tone-yellow summary{border-color:#e5bf2e}.catalog-album.tone-black summary{border-color:#13171c}.catalog-album.tone-slate summary{border-color:#6c8795}.catalog-album.tone-rust summary{border-color:#b75a37}.catalog-album.tone-gold summary{border-color:#d6a145}.catalog-album.tone-olive summary{border-color:#89915b}.catalog-album.tone-gray summary{border-color:#8c8a83}.catalog-album.tone-pink summary{border-color:#c36384}.catalog-year{font-size:12px;font-weight:900;align-self:flex-start;color:#2054a0}.catalog-title{flex:1;min-width:0}.catalog-title strong{display:block;font-size:21px;line-height:1.25;letter-spacing:-.05em}.catalog-title small{display:block;font-size:10px;color:#6e7881;margin-top:6px}.catalog-toggle{font-size:23px;line-height:1;transition:transform .2s}.catalog-album[open] .catalog-toggle{transform:rotate(45deg)}.catalog-tracks{list-style:none;margin:0;padding:0 20px 16px}.catalog-tracks li{display:flex;align-items:baseline;gap:12px;border-top:1px solid #e2e4e3;padding:9px 0;font-size:12px}.catalog-tracks li>span{font-size:10px;color:#8a9298;flex:none}.catalog-tracks a{display:flex;justify-content:space-between;gap:10px;width:100%;line-height:1.45}.catalog-tracks a:hover{color:#1b55a4;text-decoration:underline;text-underline-offset:3px}.catalog-tracks b{color:#bd642f;font-size:14px;flex:none}.catalog-source{display:block;border-top:1px solid #e2e4e3;margin:0 20px;padding:13px 0 17px;font-size:10px;font-weight:800;color:#526477}.catalog-source:hover{text-decoration:underline}.catalog-footnote{font-size:11px;color:#65727e;margin:23px 0 0;line-height:1.7}
+.live-unit{min-width:0;background:#1a273c}.live-unit:nth-child(2){background:#1d3d73}.live-unit:nth-child(3){background:#202125}.live-card{width:100%;height:calc(100% - 52px)}.live-bili{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px 22px;border-top:1px solid rgba(255,255,255,.18);font-size:11px;font-weight:800;color:#f6d547;min-height:52px}.live-bili:hover{background:rgba(255,255,255,.08);text-decoration:underline;text-underline-offset:3px}
+.archive-section{background:#102e63;color:#f5f2e9}.archive-heading h2 em{color:#f4d548}.archive-heading>p{color:#b7cbed}.archive-feature{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);background:#0c1930;margin-bottom:18px;min-height:430px}.archive-photo{position:relative;display:block;overflow:hidden;background:#193f79;min-height:430px}.archive-photo img{height:100%;width:100%;object-fit:cover;object-position:center 36%;filter:grayscale(.2) contrast(1.07)}.archive-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(6,18,41,.75),transparent 45%)}.archive-photo span{position:absolute;left:26px;bottom:22px;z-index:1;font-size:12px;font-weight:800;letter-spacing:.14em}.archive-feature-copy{padding:clamp(28px,4vw,70px);display:flex;flex-direction:column;justify-content:center}.archive-feature-copy>span{font-size:10px;color:#f6d547;letter-spacing:.2em;font-weight:800}.archive-feature-copy h3{font-size:clamp(32px,3.4vw,58px);letter-spacing:-.06em;line-height:1.2;margin:25px 0 15px}.archive-feature-copy p{font-size:13px;line-height:1.85;color:#c0cbdc;max-width:450px}.archive-feature-copy small{display:block;font-size:10px;line-height:1.8;color:#9eacc2;margin-top:20px}.archive-feature-copy small a{text-decoration:underline;text-underline-offset:3px}.archive-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}.archive-item{border:1px solid rgba(255,255,255,.19);background:#1b417e;display:flex;flex-direction:column;min-width:0;min-height:360px;transition:transform .2s,background .2s}.archive-item:hover{transform:translateY(-4px);background:#28559a}.archive-item:nth-child(2),.archive-item:nth-child(4){background:#18345c}.archive-item:nth-child(3){background:#171e29}.archive-item-top{padding:17px 17px 0;display:flex;justify-content:space-between;align-items:baseline;gap:8px}.archive-item-top b{font-size:22px}.archive-item-top small{font-size:9px;color:#f5d445}.archive-item-art{height:100px;display:grid;place-items:center;position:relative;overflow:hidden}.archive-item-art::before{content:"";position:absolute;width:135px;height:135px;border:1px solid rgba(255,255,255,.3);border-radius:50%;box-shadow:0 0 0 25px rgba(255,255,255,.04),0 0 0 55px rgba(255,255,255,.025)}.archive-item-art i{font-size:55px;font-weight:900;font-style:normal;color:#f6d547;opacity:.88;z-index:1;letter-spacing:-.1em}.archive-item-bottom{padding:0 17px 20px;display:flex;flex-direction:column;flex:1}.archive-item-bottom small{font-size:9px;color:#f6d547;font-weight:800;letter-spacing:.07em}.archive-item-bottom strong{font-size:19px;line-height:1.3;margin:11px 0;letter-spacing:-.05em}.archive-item-bottom>span{font-size:11px;line-height:1.65;color:#c4d1e5}.archive-item-bottom em{font-style:normal;font-size:10px;font-weight:800;color:#f6d547;margin-top:auto;padding-top:18px}
+@media(max-width:1050px){.catalog-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.archive-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:760px){.archive-feature{grid-template-columns:1fr}.archive-photo{min-height:360px;max-height:460px}.archive-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:520px){.catalog-grid,.archive-grid{grid-template-columns:1fr}.catalog-meta{font-size:10px}.catalog-title strong{font-size:19px}.archive-feature-copy{padding:28px}.archive-photo{min-height:330px}.archive-item{min-height:285px}.archive-item-art{height:78px}}
+
+/* Softer album cards with individually expanding tracklists. */
+.catalog-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));grid-auto-rows:1px;grid-auto-flow:row dense;gap:16px;align-items:start}
+.catalog-album{position:relative;height:338px;min-width:0;overflow:hidden;background:#fbfaf5;border:1px solid #d4d8d9;border-radius:20px;box-shadow:0 5px 16px rgba(16,34,54,.045);transition:height .24s ease,box-shadow .24s ease,border-color .24s ease}
+.catalog-album.expanded{height:auto;min-height:338px;overflow:visible;border-color:#aab9c7;box-shadow:0 13px 28px rgba(16,34,54,.11)}
+.catalog-card-head{display:flex;align-items:flex-start;gap:15px;padding:20px 21px 14px;border-top:5px solid #1c53a0}
+.catalog-album.tone-yellow .catalog-card-head{border-color:#e5bf2e}.catalog-album.tone-black .catalog-card-head{border-color:#13171c}.catalog-album.tone-slate .catalog-card-head{border-color:#6c8795}.catalog-album.tone-rust .catalog-card-head{border-color:#b75a37}.catalog-album.tone-gold .catalog-card-head{border-color:#d6a145}.catalog-album.tone-olive .catalog-card-head{border-color:#89915b}.catalog-album.tone-gray .catalog-card-head{border-color:#8c8a83}.catalog-album.tone-pink .catalog-card-head{border-color:#c36384}
+.catalog-year{font-size:12px;font-weight:900;align-self:flex-start;color:#2054a0;padding-top:3px}.catalog-title{flex:1;min-width:0}.catalog-title strong{display:block;font-size:21px;line-height:1.25;letter-spacing:-.05em}.catalog-title small{display:block;font-size:10px;color:#6e7881;margin-top:6px}
+.catalog-tracks{list-style:none;margin:0;padding:0 21px 58px}.catalog-tracks li{display:flex;align-items:baseline;gap:12px;border-top:1px solid #e8e9e6;padding:8px 0;font-size:12px}.catalog-tracks li:nth-child(n+5){display:none}.catalog-album.expanded .catalog-tracks li:nth-child(n+5){display:flex}.catalog-tracks li>span{font-size:10px;color:#8a9298;flex:none}.catalog-tracks a{display:flex;justify-content:space-between;align-items:center;gap:10px;width:100%;line-height:1.45}.catalog-tracks a:hover{color:#1b55a4;text-decoration:underline;text-underline-offset:3px}.catalog-tracks svg,.archive-item-bottom svg{width:16px;height:16px;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round;fill:none;flex:none;transition:transform .18s}.catalog-tracks a:hover svg,.archive-item:hover .archive-item-bottom svg{transform:translateX(3px)}
+.catalog-source{position:absolute;left:21px;bottom:18px;display:block;padding:8px 0;font-size:10px;font-weight:750;color:#526477;text-underline-offset:3px}.catalog-source:hover{text-decoration:underline}.catalog-expand{position:absolute;right:13px;bottom:12px;width:48px;height:48px;border:1px solid #d1d7db;border-radius:50%;display:grid;place-items:center;background:#f1f3f1;color:#204f91;box-shadow:0 3px 8px rgba(22,46,74,.08);transition:background .2s,border-color .2s,transform .2s,box-shadow .2s;cursor:pointer}.catalog-expand:hover{background:#e2e9ed;border-color:#9eafbd;box-shadow:0 6px 14px rgba(22,46,74,.14);transform:translateY(-2px)}.catalog-expand svg{width:25px;height:25px;stroke:currentColor;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;fill:none;transition:transform .22s}.catalog-expand[aria-expanded="true"] svg{transform:rotate(180deg)}
+.archive-feature{border-radius:22px;overflow:hidden}.archive-photo img{object-position:center 35%;filter:contrast(1.08)}.archive-feature-copy small{max-width:520px}
+@media(max-width:1050px){.catalog-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){.catalog-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:520px){.catalog-grid{grid-template-columns:1fr}.catalog-album{height:338px}.catalog-card-head{padding:18px 18px 13px}.catalog-tracks{padding-left:18px;padding-right:18px}.catalog-expand{width:45px;height:45px}.catalog-source{left:18px}.archive-feature{border-radius:16px}}
+.song-arrow{border-radius:50%;width:40px;height:40px;border:1px solid rgba(255,255,255,.42);display:grid;place-items:center;background:rgba(255,255,255,.06);transition:background .2s,border-color .2s,transform .2s}.song-arrow svg{width:22px;height:22px;stroke:currentColor;stroke-width:2.8;stroke-linecap:round;stroke-linejoin:round;fill:none}.song-arrow:hover{background:rgba(255,255,255,.16);border-color:rgba(255,255,255,.78);transform:translateX(2px)}.cover-imok .song-arrow{border-color:rgba(32,32,27,.4)}.cover-imok .song-arrow:hover{background:rgba(255,255,255,.24);border-color:#423e2e}
+
+/* Homepage album artwork */
+.hero-art{background:#174b9d;display:flex;align-items:center;justify-content:center;padding:clamp(24px,5vw,72px)}
+.hero-cover-link{display:block;position:relative;z-index:1;width:min(100%,560px);aspect-ratio:1;box-shadow:0 24px 70px rgba(1,12,32,.3);border-radius:4px;overflow:hidden}
+.hero-cover-link img{display:block;width:100%;height:100%;object-fit:contain;background:#103878}
+.hero-cover-caption{position:absolute;right:clamp(24px,5vw,72px);bottom:clamp(12px,2.3vw,28px);color:rgba(255,255,255,.74);font-size:10px;letter-spacing:.2em}
+@media(max-width:760px){.hero-art{min-height:0;padding:32px 9vw 62px}.hero-cover-link{width:min(100%,460px)}.hero-cover-caption{right:9vw;bottom:14px}}
+
+.maker-credit{display:block;width:100%;text-align:right;color:#8d8378;font-size:11px;letter-spacing:.12em;padding-top:18px}
+
+.archive-video-cta{display:inline-flex;align-items:center;gap:16px;width:max-content;max-width:100%;margin:4px 0 2px;padding:13px 18px;border-radius:999px;background:#f4d548;color:#102144;font-size:12px;font-weight:800;text-decoration:none;transition:transform .2s,background .2s}.archive-video-cta:hover{transform:translateY(-2px);background:#ffe679}.archive-video-cta span{font-size:17px;line-height:1}
+
+</style>
+
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="陶喆音乐档案，返回顶部"><span class="brand-mark">DT<span class="brand-dot">.</span></span><span class="brand-text">SOUL ARCHIVE<br><small>陶喆音乐档案</small></span></a>
+    <nav class="nav" aria-label="主导航"><a href="#albums">唱片色彩</a><a href="#music">代表作品</a><a href="#catalog">专辑目录</a><a href="#live">现场瞬间</a><a href="#archive">世纪记忆</a></nav>
+    <a class="nav-cta" href="#music">开始聆听 <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span> DAVID TAO · MUSIC ARCHIVE</p>
+        <h1 id="hero-title"><span>从蓝色</span><em>开始，</em><br><strong>一直听到现场。</strong></h1>
+        <p class="hero-description">从《陶喆》出发，穿过《I'm O.K.》《黑色柳丁》与《乐之路》的色彩，沿着旋律回望每个时期。</p>
+        <div class="hero-actions"><a class="button primary" href="#music">打开代表作品 <span aria-hidden="true">↗</span></a><a class="button text-link" href="#albums">看唱片色彩 <span aria-hidden="true">↗</span></a></div>
+        <div class="hero-meta"><span>1997 — 2005</span><span class="meta-rule"></span><span>BLUE · YELLOW · BLACK</span></div>
+      </div>
+      <div class="hero-art" aria-label="David Tao self-titled album cover, 1997">
+        <a class="hero-cover-link" href="https://musicbrainz.org/release/1c673a29-4dae-415e-8079-0112346fca2c/cover-art" target="_blank" rel="noopener noreferrer" aria-label="View the David Tao album cover source"><img src="https://coverartarchive.org/release/1c673a29-4dae-415e-8079-0112346fca2c/45424005157-1200.jpg" alt="David Tao self-titled album cover, 1997" loading="eager"></a>
+        <span class="hero-cover-caption">DAVID TAO / 1997</span>
+      </div>
+      <div class="scroll-cue">向下探索 <span aria-hidden="true">↓</span></div>
+    </section>
+
+    <section class="ticker" aria-label="Selected works"><div class="ticker-track">飞机场的10:30 <span>✳</span> 流沙 <span>✳</span> 爱，很简单 <span>✳</span> 沙滩 <span>✳</span> 天天 <span>✳</span> 寂寞的季节 <span>✳</span> 无缘 <span>✳</span> 月亮代表谁的心 <span>✳</span> 飞机场的10:30 <span>✳</span> 流沙 <span>✳</span> 爱，很简单 <span>✳</span> 沙滩 <span>✳</span></div></section>
+
+    <section class="album-section" id="albums" aria-labelledby="albums-title">
+      <div class="album-intro"><p class="section-kicker">01 / FOUR RECORDS, FOUR COLORS</p><h2 id="albums-title">把声音，<br><em>画成颜色。</em></h2><p>以四张唱片的视觉气质为线索：深蓝、明黄、黑橙，以及回望过往的轮廓线。点选唱片，筛出相关歌曲。</p></div>
+      <div class="album-grid" role="group" aria-label="按唱片筛选歌曲">
+        <button class="album-tile album-david" type="button" data-album="david" aria-pressed="false"><span class="album-year">1997 / 01</span><span class="album-art album-art-david" aria-hidden="true"><i></i><b>DT</b></span><strong>陶喆</strong><small>深蓝 / 手写感 / 初次相遇</small><span class="album-action">探索歌曲 ↗</span></button>
+        <button class="album-tile album-imok" type="button" data-album="imok" aria-pressed="false"><span class="album-year">1999 / 02</span><span class="album-art album-art-imok" aria-hidden="true"><i></i><b>OK.</b></span><strong>I'm O.K.</strong><small>明黄 / 网点 / 自由节拍</small><span class="album-action">探索歌曲 ↗</span></button>
+        <button class="album-tile album-black" type="button" data-album="black" aria-pressed="false"><span class="album-year">2002 / 03</span><span class="album-art album-art-black" aria-hidden="true"><i></i><b>●</b></span><strong>黑色柳丁</strong><small>黑白 / 橙点 / 锋利对比</small><span class="album-action">探索歌曲 ↗</span></button>
+        <button class="album-tile album-road" type="button" data-album="road" aria-pressed="false"><span class="album-year">2003 / 04</span><span class="album-art album-art-road" aria-hidden="true"><i></i><b>1997<br>—2003</b></span><strong>乐之路</strong><small>冷灰 / 轮廓线 / 回望</small><span class="album-action">探索歌曲 ↗</span></button>
+      </div>
+    </section>
+
+    <section class="section music-section" id="music" aria-labelledby="music-title">
+<div class="section-heading"><div><p class="section-kicker">02 / SELECTED WORKS</p><h2 id="music-title">代表作品，<br><em>从熟悉的旋律开始。</em></h2></div><p>从早期经典到不同时期的代表曲目，点开卡片可查看专辑出处，并跳转网易云音乐搜索。</p></div>
+      <div class="music-toolbar"><div class="filter-group" role="group" aria-label="筛选歌曲"><button class="filter active" type="button" data-filter="all" aria-pressed="true">全部 <sup>12</sup></button><button class="filter" type="button" data-filter="favorite" aria-pressed="false">代表作品 <sup>08</sup></button><button class="filter" type="button" data-filter="more" aria-pressed="false">延伸曲目 <sup>04</sup></button></div><button id="surprise" class="surprise" type="button"><span aria-hidden="true">✳</span> 随机听一首</button></div>
+      <div class="songs-grid" id="songs-grid"></div>
+      <div class="song-detail" id="song-detail" hidden aria-live="polite"></div>
+    </section>
+
+    <section class="quote-band" aria-label="音乐旅程"><span class="quote-star">✳</span><p>有些旋律，<em>一响起就把我们带回从前。</em></p><span class="quote-index">DAVID TAO / 1997—NOW</span></section>
+
+    <section class="section catalog-section" id="catalog" aria-labelledby="catalog-title">
+      <div class="section-heading"><div><p class="section-kicker">03 / THE DISCOGRAPHY</p><h2 id="catalog-title">沿着专辑，<br><em>把歌继续听完。</em></h2></div><p>从 1997 年同名专辑到 2025 年《STUPID POP SONGS》，收录八张录音室专辑与《乐之路》精选辑的曲目和版本。展开唱片，点歌名即可跳转网易云搜索。</p></div>
+      <div class="catalog-meta"><span id="catalog-count"></span><span>点击专辑展开 / 收起</span></div>
+      <div class="catalog-grid" id="catalog-grid"></div>
+      <p class="catalog-footnote">不同地区与平台的曲目版本可能有差异；目录按 Hit FM 专辑资料整理，每张唱片底部可查看来源。</p>
+    </section>
+
+    <section class="section live-section" id="live" aria-labelledby="live-title">
+      <div class="section-heading live-heading"><div><p class="section-kicker">04 / ON STAGE</p><h2 id="live-title">灯亮起的<br><em>那一刻。</em></h2></div><p>从武汉启程，回到台北，再到香港。通过陶喆官方频道的巡演 Vlog，重访 <i>Soul Power II</i> 的真实片段；每张卡片都可直达 B 站。</p></div>
+      <div class="live-grid" id="live-grid"></div>
+      <p class="media-note">点击画面可在本站播放 YouTube 版本；下方链接可直接在 B 站观看。两种平台的影像片段可能略有不同。</p>
+    </section>
+
+    <section class="section archive-section" id="archive" aria-labelledby="archive-title">
+      <div class="section-heading archive-heading"><div><p class="section-kicker">05 / MEMORY ARCHIVE</p><h2 id="archive-title">世纪记忆，<br><em>还在发声。</em></h2></div><p>旧录像、纪录片、歌迷镜头和一张真实的现场老照片。按年份翻看不同视角下的陶喆，打开链接回到原始发布页。</p></div>
+      <div class="archive-feature"><a class="archive-photo" href="https://musicbrainz.org/release/92f2adb8-665c-42e9-a351-591f8666336e/cover-art" target="_blank" rel="noopener noreferrer"><img src="https://coverartarchive.org/release/92f2adb8-665c-42e9-a351-591f8666336e/17931603591-1200.jpg" alt="2003 年《Soul Power Live》现场影音专辑封面" loading="lazy"><span>2003 / SOUL POWER LIVE</span></a><div class="archive-feature-copy"><span>FROM THE LIVE ARCHIVE · 2003</span><h3>Soul Power<br>灵魂现场。</h3><p>《Soul Power Live》香港演唱会影音封面，收录这场 2003 年红磡现场。把灯光、舞台和灵魂乐的力量，作为这段记忆的入口。</p><a class="archive-video-cta" href="https://www.bilibili.com/video/BV15C41187cx/" target="_blank" rel="noopener noreferrer">观看 Soul Power Live 全场 <span aria-hidden="true">&#8599;</span></a><small>封面图：<a href="https://musicbrainz.org/release/92f2adb8-665c-42e9-a351-591f8666336e/cover-art" target="_blank" rel="noopener noreferrer">MusicBrainz / Cover Art Archive</a> · <a href="https://www.bilibili.com/video/BV15C41187cx/" target="_blank" rel="noopener noreferrer">打开 2003 官方修复现场 ↗</a></small></div></div>
+      <div class="archive-grid" id="archive-grid"><a class="archive-item archive-0" href="https://www.bilibili.com/video/BV13a4y1t767/" target="_blank" rel="noopener noreferrer"><span class="archive-item-top"><b>1998</b><small>歌迷整理</small></span><span class="archive-item-art" aria-hidden="true"><i>01</i></span><span class="archive-item-bottom"><small>年轻的陶喆 / 旧影像</small><strong>第 9 届金曲奖：新人时期</strong><span>早期颁奖与《爱，很简单》现场影像</span><em>在 B 站观看 <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M10 4l6 6-6 6"/></svg></em></span></a><a class="archive-item archive-1" href="https://www.bilibili.com/video/BV1XK4y1K7mZ/" target="_blank" rel="noopener noreferrer"><span class="archive-item-top"><b>2000</b><small>官方频道</small></span><span class="archive-item-art" aria-hidden="true"><i>02</i></span><span class="archive-item-bottom"><small>官方回看 / 青年现场</small><strong>陶喆回看《小镇姑娘》</strong><span>重温《I’m O.K.》时期的舞台记忆</span><em>在 B 站观看 <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M10 4l6 6-6 6"/></svg></em></span></a><a class="archive-item archive-2" href="https://www.bilibili.com/video/BV15C41187cx/" target="_blank" rel="noopener noreferrer"><span class="archive-item-top"><b>2003</b><small>官方频道</small></span><span class="archive-item-art" aria-hidden="true"><i>03</i></span><span class="archive-item-bottom"><small>演唱会 / 经典修复</small><strong>Soul Power 全场影像</strong><span>官方 4K 修复，重回香港红馆现场</span><em>在 B 站观看 <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M10 4l6 6-6 6"/></svg></em></span></a><a class="archive-item archive-3" href="https://www.bilibili.com/video/BV1mE421w79B/" target="_blank" rel="noopener noreferrer"><span class="archive-item-top"><b>2003</b><small>用户整理</small></span><span class="archive-item-art" aria-hidden="true"><i>04</i></span><span class="archive-item-bottom"><small>创作纪录片 / 用户修复</small><strong>《十一号产房》</strong><span>走进《黑色柳丁》的创作过程</span><em>在 B 站观看 <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M10 4l6 6-6 6"/></svg></em></span></a><a class="archive-item archive-4" href="https://www.bilibili.com/video/BV1Xj9vY4Ewy" target="_blank" rel="noopener noreferrer"><span class="archive-item-top"><b>2025</b><small>歌迷拍摄</small></span><span class="archive-item-art" aria-hidden="true"><i>05</i></span><span class="archive-item-bottom"><small>歌迷镜头 / 现场档案</small><strong>香港站 Day 2 个人记录</strong><span>保留观众席的 Soul Power II 现场声音</span><em>在 B 站观看 <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M10 4l6 6-6 6"/></svg></em></span></a></div>
+      <p class="media-note">影像均链接到原发布页；“歌迷整理”“用户整理”“歌迷拍摄”标注了上传者的视角，不代表官方发布。</p>
+    </section>
+
+    <section class="about-section" id="about" aria-labelledby="about-title"><div class="about-number">06 / THE SOUL</div><div class="about-body"><h2 id="about-title">继续听，<br><span>继续唱。</span></h2><p>陶喆的音乐在 R&B、灵魂乐与摇滚之间流动。无论你从哪一首歌认识他，这些旋律总会在新的现场，长出新的生命力。</p><a href="https://music.163.com/#/search/m/?s=%E9%99%B6%E5%96%86&type=100" target="_blank" rel="noopener noreferrer">去网易云探索更多 <span aria-hidden="true">↗</span></a></div><div class="about-disc" aria-hidden="true"><div></div></div></section>
+  </main>
+
+  <footer class="footer"><div class="footer-brand">陶喆<span>.</span><small>SOUL ARCHIVE</small></div><p>一个为音乐而做的非官方互动网页。专辑曲目附来源，歌曲跳转网易云搜索；影像链接至官方与用户原发布页。</p><a href="#top">回到顶部 ↑</a><small class="maker-credit">制作：温理</small>
+</footer>
+
+  <dialog id="video-dialog" class="video-dialog" aria-label="演唱会影片"><div class="dialog-top"><span id="dialog-title">LIVE MOMENT</span><button id="close-dialog" type="button" aria-label="关闭影片">×</button></div><div class="video-frame" id="video-frame"></div><p id="dialog-caption"></p></dialog>
+<script>
+const songs = [
+  {title:'飞机场的10:30',year:1997,album:'陶喆同名专辑',albumKey:'david',favorite:true,glyph:'10:30',note:'从机场的时间刻度开始，一首歌就能把人带回某个等待的时刻。'},
+  {title:'流沙',year:1997,album:'陶喆同名专辑',albumKey:'david',favorite:true,glyph:'≈',note:'缓慢流动的节奏，把不愿放下的心情唱得很轻。'},
+  {title:'爱，很简单',year:1997,album:'陶喆同名专辑',albumKey:'david',favorite:true,glyph:'♡',note:'一句简单的告白，经过许多年仍然动人。'},
+  {title:'沙滩',year:1997,album:'陶喆同名专辑',albumKey:'david',favorite:true,glyph:'〰',note:'蓝色唱片里的一阵海风，留给夜晚和独处。'},
+  {title:'天天',year:1999,album:"I'm O.K.",albumKey:'imok',favorite:true,glyph:'☼',note:'明亮的旋律，像把日常里最柔软的一部分留给你。'},
+  {title:'寂寞的季节',year:2003,album:'乐之路',albumKey:'road',favorite:true,glyph:'✳',note:'回望旧时光的精选辑里，这首歌有自己的温度与留白。'},
+  {title:'无缘',year:2005,album:'太平盛世',albumKey:'taiping',favorite:true,glyph:'∞',note:'唱给那些已经走散，却仍值得被记住的缘分。'},
+  {title:'月亮代表谁的心',year:2002,album:'黑色柳丁',albumKey:'black',favorite:true,glyph:'◕',note:'熟悉的旋律在黑色柳丁的世界里，换了一种问法。'},
+  {title:'普通朋友',year:1999,album:"I'm O.K.",albumKey:'imok',favorite:false,glyph:'✦',note:'说不出口的心情，被 R&B 的节奏轻轻托住。'},
+  {title:'找自己',year:1999,album:"I'm O.K.",albumKey:'imok',favorite:false,glyph:'↗',note:'一路向前，也别忘了听见内心的声音。'},
+  {title:'黑色柳丁',year:2002,album:'黑色柳丁',albumKey:'black',favorite:false,glyph:'●',note:'更锋利的情绪与摇滚能量，在这里正面碰撞。'},
+  {title:'Melody',year:2002,album:'黑色柳丁',albumKey:'black',favorite:false,glyph:'♪',note:'熟悉的名字，与反复被哼唱的旋律。'}
+];
+const moments = [
+  {city:'武汉',en:'WUHAN',date:'2024 · 巡演首站',id:'PgI7Xi8bTvU',bilUrl:'https://www.bilibili.com/video/BV1px4y1S71S/',bilLabel:'B站官摄《孙子兵法》',desc:'Soul Power II 从这里出发。跟着官方 Vlog 走进开场的两晚。'},
+  {city:'台北',en:'TAIPEI',date:'2024 · 台北小巨蛋',id:'bZhiQkP9aH4',bilUrl:'https://www.bilibili.com/video/BV1ZFSMYUEW5/',bilLabel:'B站官方巡演 Vlog',desc:'回到熟悉的城市，与歌迷重逢的舞台时刻。'},
+  {city:'香港',en:'HONG KONG',date:'2025 · 红磡体育馆',id:'IHZXd5gPJoY',bilUrl:'https://www.bilibili.com/video/BV1NGZJYSEQs/',bilLabel:'B站官方巡演 Vlog',desc:'跨越多年，再次把 Soul Power 带到红馆。'}
+];
+const grid = document.querySelector('#songs-grid');
+const detail = document.querySelector('#song-detail');
+let activeFilter = 'all';
+let selectedSong = null;
+const neteaseUrl = title => 'https://music.163.com/#/search/m/?s=' + encodeURIComponent('陶喆 ' + title) + '&type=1';
+function visibleSongs(){
+  if(activeFilter === 'favorite') return songs.filter(song => song.favorite);
+  if(activeFilter === 'more') return songs.filter(song => !song.favorite);
+  if(activeFilter.startsWith('album:')) return songs.filter(song => song.albumKey === activeFilter.slice(6));
+  return songs;
+}
+function renderSongs(){
+  const visible = visibleSongs();
+  grid.innerHTML = visible.map(song => `<article class="song-card cover-${song.albumKey}">
+    <div class="song-top"><span class="song-index">NO. ${String(songs.indexOf(song)+1).padStart(2,'0')}</span><span class="song-year">${song.year}</span></div>
+    <span class="song-glyph" aria-hidden="true">${song.glyph}</span>
+    <div class="song-bottom"><span><strong>${song.title}</strong><small>${song.album}</small></span><button class="song-arrow" type="button" data-song="${song.title}" aria-label="查看《${song.title}》详情"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M12 6l6 6-6 6"/></svg></button></div>
+    <a class="song-listen" href="${neteaseUrl(song.title)}" target="_blank" rel="noopener noreferrer" aria-label="去网易云音乐搜索陶喆的《${song.title}》">去网易云音乐 <span aria-hidden="true">↗</span></a>
+  </article>`).join('');
+  grid.querySelectorAll('.song-arrow').forEach(button => button.addEventListener('click', () => selectSong(button.dataset.song)));
+}
+function setFilter(filter){
+  activeFilter = filter;
+  selectedSong = null;
+  detail.hidden = true;
+  document.querySelectorAll('.filter').forEach(button => {
+    const active = button.dataset.filter === filter;
+    button.classList.toggle('active',active);
+    button.setAttribute('aria-pressed',String(active));
+  });
+  document.querySelectorAll('.album-tile').forEach(button => {
+    const active = filter === 'album:' + button.dataset.album;
+    button.classList.toggle('active',active);
+    button.setAttribute('aria-pressed',String(active));
+  });
+  renderSongs();
+}
+function selectSong(title){
+  selectedSong = title;
+  const song = songs.find(item => item.title === title);
+  detail.hidden = false;
+  detail.innerHTML = `<div><span class="detail-kicker">${song.year} / ${song.album}</span><h3>《${song.title}》</h3><p>${song.note}</p></div><a class="detail-link" href="${neteaseUrl(song.title)}" target="_blank" rel="noopener noreferrer">去网易云搜索这首歌 ↗</a>`;
+  detail.scrollIntoView({behavior:'smooth',block:'nearest'});
+}
+document.querySelectorAll('.filter').forEach(button => button.addEventListener('click', () => setFilter(button.dataset.filter)));
+document.querySelectorAll('.album-tile').forEach(button => button.addEventListener('click', () => {
+  setFilter('album:' + button.dataset.album);
+  document.querySelector('#music').scrollIntoView({behavior:'smooth',block:'start'});
+}));
+document.querySelector('#surprise').addEventListener('click', () => {
+  const previousSong = selectedSong;
+  setFilter('favorite');
+  const choices = songs.filter(song => song.favorite && song.title !== previousSong);
+  selectSong(choices[Math.floor(Math.random() * choices.length)].title);
+});
+renderSongs();
+
+const liveGrid = document.querySelector('#live-grid');
+liveGrid.innerHTML = moments.map((moment,index) => `<div class="live-unit"><button class="live-card" type="button" data-video="${moment.id}" aria-label="播放${moment.city}演唱会片段"><span class="live-thumb"><img src="https://i.ytimg.com/vi/${moment.id}/hqdefault.jpg" alt="陶喆官方频道${moment.city}巡演 Vlog 封面" loading="lazy"><span class="live-number">LIVE / 0${index+1}</span><span class="play-icon" aria-hidden="true">▶</span></span><span class="live-info"><span class="city">${moment.city}<span>${moment.en}</span></span><p>${moment.desc}</p><span class="live-date">${moment.date}</span></span></button><a class="live-bili" href="${moment.bilUrl}" target="_blank" rel="noopener noreferrer">${moment.bilLabel} <span aria-hidden="true">↗</span></a></div>`).join('');
+const dialog = document.querySelector('#video-dialog');
+const frame = document.querySelector('#video-frame');
+liveGrid.querySelectorAll('.live-card').forEach(card => card.addEventListener('click', () => {
+  const moment = moments.find(item => item.id === card.dataset.video);
+  document.querySelector('#dialog-title').textContent = `${moment.city} / SOUL POWER II`;
+  document.querySelector('#dialog-caption').innerHTML = `陶喆官方巡演 Vlog · <a href="https://www.youtube.com/watch?v=${moment.id}" target="_blank" rel="noopener noreferrer">在 YouTube 打开 ↗</a>`;
+  frame.innerHTML = `<iframe src="https://www.youtube-nocookie.com/embed/${moment.id}?autoplay=1&rel=0" title="陶喆 Soul Power II ${moment.city}官方 Vlog" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
+  dialog.showModal();
+}));
+function closeVideo(){dialog.close();frame.innerHTML='';}
+document.querySelector('#close-dialog').addEventListener('click',closeVideo);
+dialog.addEventListener('click',event=>{if(event.target===dialog)closeVideo();});
+dialog.addEventListener('close',()=>{frame.innerHTML='';});
+
+// Album sequence and track names follow Hit FM's album database.
+const albumCatalog = [
+  {year:1997,title:'陶喆同名专辑',kind:'录音室专辑 01',tone:'blue',source:'https://pmdb.taipei/database/album/0p126665836353015496',tracks:['Airport Take Off','飞机场的10:30','Airport Arrival','爱，很简单','沙滩','十七岁','望春风','王八蛋','是是非非','流沙','Take 6 Minus 3','心乱飞','再见以前先说再见','沙滩（钢琴版）','Answering Machine']},
+  {year:1999,title:"I'm O.K.",kind:'录音室专辑 02',tone:'yellow',source:'https://www.hitoradio.com/newweb/307album',tracks:['Doxology','找自己','小镇姑娘','夜来香','普通朋友',"I'm O.K.",'不一样','说走就走','多谢你','马戏团','天天','Angeline','Amen']},
+  {year:2002,title:'黑色柳丁',kind:'录音室专辑 03',tone:'black',source:'https://www.hitoradio.com/newweb/305album',tracks:['黑色柳丁','今天晚间新闻','Dear God','Angel','讨厌红楼梦','蝴蝶','宫保鸡丁','Melody','月亮代表谁的心','二十二','My Anata','摇篮曲','Katrina (Demo)']},
+  {year:2003,title:'乐之路 1997—2003',kind:'新歌＋精选 / 含珍贵版本',tone:'slate',source:'https://www.hitoradio.com/newweb/306album',tracks:['今天没回家','王八蛋','普通朋友','小镇姑娘','沙滩','飞机场的10:30','My Anata','我喜欢','天天','Melody','找自己','寂寞的季节','黑色柳丁','爱，很简单','Runaway','天天（2003新版）','飞机场的10:30（原始 Demo）','黑色柳丁（原始概念录音）','沙滩（Acappella Demo）','我喜欢（抒情版）','沙滩（吉他版）','普通朋友（排练版）','爱，很简单（1993 英文 Demo）']},
+  {year:2005,title:'太平盛世',kind:'录音室专辑 04',tone:'rust',source:'https://www.hitoradio.com/newweb/102album',tracks:['鬼（序曲）','鬼','Catherine','就是爱你','孙子兵法','爱我还是他','Susan说','无缘','Sula与Lampa的寓言','2Night·藏爱','她的歌','爱是个什么东西','祈祷良辰歌']},
+  {year:2006,title:'太美丽',kind:'录音室专辑 05',tone:'gold',source:'https://www.hitoradio.com/newweb/5507album',tracks:['太美丽广播电台','忘不了','太美丽','追','那一瞬间','Walk On','自导自演的悲剧','祝你幸福','似曾相识','今天你要嫁给我（与蔡依林）','每一面都美','不爱','Olia']},
+  {year:2009,title:'69乐章',kind:'录音室专辑 06',tone:'olive',source:'https://www.hitoradio.com/newweb/11621album',tracks:['愿主怜悯','乱七∞糟','暗恋','Play','火鸟功','雪豹','关于陶喆','我太傻','请继续，任性','中国姑娘','谁的奥斯卡？','应征爱','你的歌','桂冠英雄']},
+  {year:2013,title:'再见你好吗',kind:'录音室专辑 07',tone:'gray',source:'https://www.hitoradio.com/newweb/13997album',tracks:['Hello','勿忘我','一念之间','逗阵兄弟（与卢广仲）','真爱等一下（与蔡健雅）','好好说再见（与关诗敏）','上爱唱的歌','那个女孩（与卢广仲）','The Promise','因为爱','小小的你','All for Joy（与关诗敏）','逗阵兄弟']},
+  {year:2025,title:'STUPID POP SONGS',kind:'录音室专辑 08',tone:'pink',source:'https://www.hitoradio.com/newweb/19955album',tracks:['Stupid Pop Song','Moonchild','星心','一点点','路上','半晴天','活该','In the Morning','微尘','千言万语','Lonely is the Night（与 A-Lin）','陪你','让爱再继续','全世界会唱的歌','Do I Do I (reprise)']}
+];
+
+const catalogRoot = document.querySelector('#catalog-grid');
+const catalogCount = albumCatalog.reduce((sum, album) => sum + album.tracks.length, 0);
+document.querySelector('#catalog-count').textContent = `${albumCatalog.length} 张专辑 · ${catalogCount} 首曲目及版本`;
+catalogRoot.innerHTML = albumCatalog.map((album, index) => `<article class="catalog-album tone-${album.tone}" data-catalog-index="${index}">
+  <div class="catalog-card-head"><span class="catalog-year">${album.year}</span><span class="catalog-title"><strong>${album.title}</strong><small>${album.kind} / ${album.tracks.length} 首</small></span></div>
+  <ol class="catalog-tracks">${album.tracks.map((title, i) => `<li><span>${String(i+1).padStart(2,'0')}</span><a href="${neteaseUrl(title)}" target="_blank" rel="noopener noreferrer" title="在网易云搜索陶喆 ${title}">${title}<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M10 4l6 6-6 6"/></svg></a></li>`).join('')}</ol>
+  <a class="catalog-source" href="${album.source}" target="_blank" rel="noopener noreferrer">查看专辑曲目来源</a>
+  <button class="catalog-expand" type="button" aria-expanded="false" aria-label="展开《${album.title}》完整曲目"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+</article>`).join('');
+
+function layoutCatalog(){
+  const row = parseFloat(getComputedStyle(catalogRoot).gridAutoRows) || 1;
+  const gap = parseFloat(getComputedStyle(catalogRoot).rowGap) || 0;
+  catalogRoot.querySelectorAll('.catalog-album').forEach(card => {
+    card.style.gridRowEnd = `span ${Math.ceil((card.getBoundingClientRect().height + gap) / (row + gap))}`;
+  });
+}
+catalogRoot.querySelectorAll('.catalog-expand').forEach(button => button.addEventListener('click', () => {
+  const card = button.closest('.catalog-album');
+  const expanded = !card.classList.contains('expanded');
+  card.classList.toggle('expanded', expanded);
+  button.setAttribute('aria-expanded', String(expanded));
+  button.setAttribute('aria-label', `${expanded ? '收起' : '展开'}《${albumCatalog[Number(card.dataset.catalogIndex)].title}》完整曲目`);
+  requestAnimationFrame(layoutCatalog);
+}));
+window.addEventListener('resize', layoutCatalog, {passive:true});
+requestAnimationFrame(layoutCatalog);
+
+
+</script>
+</body>
+</html>
